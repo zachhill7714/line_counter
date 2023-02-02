@@ -44,7 +44,7 @@ language = config_data[0].strip()
 excludes = config_data[1]
 filetypes = config_data[2]
 
-filepaths = get_relevant_files('.')
+filepaths = get_relevant_files('This')
 
 for filepath in filepaths:
     total_lines += get_line_count(filepath)
